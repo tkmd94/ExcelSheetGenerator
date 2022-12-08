@@ -4,7 +4,7 @@
 
 # Features
 
-以下のデータをExcelテンプレートファイルの指定セルに出力して保存することができます。
+* 以下のデータをExcelテンプレートファイルの指定セルに出力して保存することができます。
   * Patient ID
   * Patient name
   * Course ID
@@ -15,6 +15,11 @@
   * PlanApproval status
   * Isocenter position
   * Structure volume
+  * 
+* 用途
+  * 書式が決まっているExcelシートに患者情報を自動で入力することができます。
+  * 患者毎の位置照合結果シートに患者情報を自動入力、
+  * 
 
 # Demo
 
