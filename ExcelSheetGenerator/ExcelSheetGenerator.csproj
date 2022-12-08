@@ -113,9 +113,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Sample\AAA.xlsx" />
+    <None Include="Sample\BBB.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="FordWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sample\ExcelSheetGeneratorPreference.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
