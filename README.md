@@ -1,14 +1,24 @@
 # ExcelSheetGenerator
  
-「ExcelSheetGenerator」は、データをExcelファイルの指定セルに出力して保存するESAPI スクリプトです。
-  
+「ExcelSheetGenerator」は、データをExcelテンプレートファイルの指定セルに出力して保存するESAPI スクリプトです。
+
 # Features
 
-Eclipse External Beam Planning 画面をキャプチャし、ARIA eDoc プリンターを介して画像を ARIA ドキュメントに直接保存します。
+以下のデータをExcelテンプレートファイルの指定セルに出力して保存することができます。
+  * Patient ID
+  * Patient name
+  * Course ID
+  * Plan ID
+  * Dose per fraction
+  * No of fraction
+  * Total dose
+  * PlanApproval status
+  * Isocenter position
+  * Structure volume
 
 # Demo
 
-![Screen capture of planCompare UI](https://github.com/tkmd94/ScreenCapture_eDoc/blob/master/demo.gif)
+![Screen capture of planCompare UI](https://github.com/tkmd94/ExcelSheetGenerator/blob/master/demo.gif)
 
 # Requirement
 
@@ -16,11 +26,12 @@ Eclipse External Beam Planning 画面をキャプチャし、ARIA eDoc プリン
 
 # Installation
 1. [MainWindow.xaml.cs]の３５行目　
-　　```PreferencePath = @"D:\Dshare\ExcelSheetGenerator\ExcelSheetGeneratorPreference.xml"];```
-2. このプロジェクトをビルドして、DLL ファイル [ExcelSheetGenerator.esapi.dll] を生成します。
-2. 生成された DLL ファイルを、Eclipse ツールバーの [ツール] -> [スクリプト] で指定したフォルダーにコピーします。
-3. このスクリプトをお気に入りとしてマークし、キーボード ショートカットを設定します。
-4. ARIAeDocProfile_ENU_ESAPI_ScreenCapture.xml を ARIA eDoc の Profiles フォルダーにコピーし、設定を変更します。
+2. ```PreferencePath = @"D:\Dshare\ExcelSheetGenerator\ExcelSheetGeneratorPreference.xml"];```
+
+3. このプロジェクトをビルドして、DLL ファイル [ExcelSheetGenerator.esapi.dll] を生成します。
+4. 生成された DLL ファイルを、Eclipse ツールバーの [ツール] -> [スクリプト] で指定したフォルダーにコピーします。
+5. このスクリプトをお気に入りとしてマークし、キーボード ショートカットを設定します。
+6. ARIAeDocProfile_ENU_ESAPI_ScreenCapture.xml を ARIA eDoc の Profiles フォルダーにコピーし、設定を変更します。
 
 # Usage
 
