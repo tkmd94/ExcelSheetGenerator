@@ -17,14 +17,14 @@ ExcelSheetGenerator" is an ESAPI script that outputs data to a specified cell in
   * Structure volume
 * Folder name and file name can be specified based on patient/plan information.
 * Settings can be written in XML format and multiple conditions can be selected and executed in a dialog box.
-* Can be executed even on a terminal without Excel installed.
+* Can be executed even on a workstation without Excel installed.
 
 * Applications
   * Automatic input of patient information into check sheets created for each patient.
 
 # Demo
 
-! [Screen capture of planCompare UI](https://github.com/tkmd94/ExcelSheetGenerator/blob/master/demo.gif)
+![Screen capture of planCompare UI](https://github.com/tkmd94/ExcelSheetGenerator/blob/master/demo.gif)
 
 # Requirement
 
