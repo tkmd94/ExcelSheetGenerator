@@ -117,10 +117,10 @@
     <None Include="Sample\BBB.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="FordWeavers.xml" />
+    <Resource Include="Sample\ExcelSheetGeneratorPreference.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sample\ExcelSheetGeneratorPreference.xml" />
+    <Resource Include="FodyWeavers.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
