@@ -64,4 +64,4 @@ ExcelSheetGenerator" is an ESAPI script that outputs data to a specified cell in
  
 # License
  
-"ScreenCapture_eDoc" is under [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+"ExcelSheetGenerator" is under [MIT License](https://en.wikipedia.org/wiki/MIT_License).
