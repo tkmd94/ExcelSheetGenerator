@@ -64,4 +64,4 @@
  
 # License
  
-"ScreenCapture_eDoc" は [MIT ライセンス](https://en.wikipedia.org/wiki/MIT_License) の下にあります。
+"ExcelSheetGenerator" は [MIT ライセンス](https://en.wikipedia.org/wiki/MIT_License) の下にあります。
