@@ -15,14 +15,12 @@
   * PlanApproval status
   * Isocenter position
   * Structure volume
-* 患者・プラン情報を基にしてフォルダ名とファイル名を指定して作成することができます。
+* 患者・プラン情報を基にフォルダ名とファイル名を指定して作成することができます。
 * 設定はXML形式で記述し、複数条件をダイアログで選択実行が可能です。
 * Excelがインストールされていない端末でも実行可能です。
 
 * 用途
-  * 書式が決まっているExcelシートに患者情報を自動で入力することができます。
-  * 患者毎の位置照合結果シートに患者情報を自動入力、
-  * 
+  * 患者毎に作成するチェックシートに患者情報を自動入力
 
 # Demo
 
@@ -33,19 +31,30 @@
 * Eclipse 15.6 以上 (古いバージョンではチェックされていません。)
 
 # Installation
-1. [MainWindow.xaml.cs]の３５行目　
-2. ```PreferencePath = @"D:\Dshare\ExcelSheetGenerator\ExcelSheetGeneratorPreference.xml"];```
+1. Excelテンプレートファイルを作成します。
+2.  [ExcelSheetGeneratorPreference.xml]を配置し、[MainWindow.xaml.cs]の３５行目のパスを変更します。
 
-3. このプロジェクトをビルドして、DLL ファイル [ExcelSheetGenerator.esapi.dll] を生成します。
-4. 生成された DLL ファイルを、Eclipse ツールバーの [ツール] -> [スクリプト] で指定したフォルダーにコピーします。
-5. このスクリプトをお気に入りとしてマークし、キーボード ショートカットを設定します。
-6. ARIAeDocProfile_ENU_ESAPI_ScreenCapture.xml を ARIA eDoc の Profiles フォルダーにコピーし、設定を変更します。
+    ```PreferencePath = @"D:\Dshare\ExcelSheetGenerator\ExcelSheetGeneratorPreference.xml";```
+    
+3. [ExcelSheetGeneratorPreference.xml]の設定を修正します。
+    * templatename：ダイアログで表示する名称
+    * templatePath：テンプレートファイルパス
+    * exportPath：保存するディレクトリパス
+    * filename：保存するファイル名
+    * type：データタイプ（info/DVH）
+    * data：データ名
+    * structure：データを出力する輪郭名（type:DVH,data:Volumeのみ）
+    * address：データを出力するセルの位置
+
+4. プロジェクトをビルドして、DLL ファイル [ExcelSheetGenerator.esapi.dll] を生成します。
+5. 生成された DLL ファイルを、Eclipse ツールバーの [ツール] -> [スクリプト] で指定したフォルダーにコピーします
+6. [2]で設定したテンプレートファイルパスにExcelテンプレートファイルを配置します。
 
 # Usage
 
 **※本ソースコードは自己責任で使用してください。**
 
-1. キャプチャしたい画面を表示します。
+1. スクリプトを実行し、ダイアログから
 2. 登録したキーボード ショートカットからスクリプトを実行します。
 3. スクリプトの実行が完了すると、[OK] ダイアログが表示されます。
  
