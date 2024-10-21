@@ -1,6 +1,6 @@
 # ExcelSheetGenerator
  
-ExcelSheetGenerator" is an ESAPI script that outputs data to a specified cell in an Excel template file and saves it.
+ExcelSheetGenerator is an ESAPI script that outputs data to a specified cell in an Excel template file and saves it.
 
 # Features
 
